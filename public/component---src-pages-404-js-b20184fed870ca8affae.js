@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{w2l6:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),l=t.n(a),o=t("Bl7J");n.default=function(){return l.a.createElement(o.a,null,l.a.createElement("h1",null,"NOT FOUND"),l.a.createElement("p",null,"Page not exist. Please got to Home Page"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-b20184fed870ca8affae.js.map

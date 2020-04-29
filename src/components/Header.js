@@ -11,10 +11,10 @@ const Header = props => (
         <h1>CHERUKKATTIL NASEER</h1>
         <p>
           A student at {' '}
-          <a href="https://www.georgebrown.ca/">George Brown College</a> in Canada.
+          <a href="https://www.georgebrown.ca/" target="_blank">George Brown College</a> in Canada.
           <br />
           Course:{' '}
-          <a href="https://www.georgebrown.ca/programs/blockchain-development-program-t175/">Blockchain Development Program</a>.
+          <a href="https://www.georgebrown.ca/programs/blockchain-development-program-t175/" target="_blank">Blockchain Development Program</a>.
         </p>
       </div>
     </div>
