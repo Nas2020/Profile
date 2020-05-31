@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import pic01 from '../images/pic01.jpeg'
+// import pic01 from '../images/pic01.jpeg'
 
 class Main extends React.Component {
   render() {
@@ -19,7 +19,7 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-        <article
+        {/* <article
           id="intro"
           className={`${this.props.article === 'intro' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -47,9 +47,32 @@ class Main extends React.Component {
             </ul>
           </div>
           {close}
+        </article> */}
+
+<article
+          id="intro"
+          className={`${this.props.article === 'intro' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Skills</h2>
+          <div>
+            <b>Technical Skills:</b>
+            <ul>
+              <li>- Programming: JavaScript, Solidity</li>
+              <li>- Web Applications: nodeJs, reactJs, HTML, CSS, MongoDB, socket.io</li>
+              <li>- Blockchain: Ethereum</li>
+              <li>- DevOps Tools: Jenkins, GIT</li>
+              <li>- Project Management: Trello, Microsft Team</li>
+            </ul>
+          </div>
+          {close}
         </article>
 
-        <article
+{/* Education Section */}
+
+        {/* <article
           id="work"
           className={`${this.props.article === 'work' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
@@ -80,16 +103,100 @@ class Main extends React.Component {
           </ul> <b>Diploma in Electronics</b><a href = "https://www.tp.edu.sg/" target="_blank"> – Temasek Polytechnic</a>, Singapore — 2002-2005
           </div>
           {close}
+        </article> */}
+
+<article
+          id="work"
+          className={`${this.props.article === 'work' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Education</h2>
+          <div>
+          <b>Blockchain Development Program -</b> <a href = "https://www.georgebrown.ca/" target="_blank"> George Brown College,</a> Canada — Jan, 2020 to Present (Casa Loma Campus, Toronto).
+          <ul style= {{listStyleType: "square" }} ><li><b>Key Courses/Concepts:</b></li>
+         
+            <ul style= {{listStyleType: "circle" }}><li>Design crypto-economic models to solve business problems</li>
+            <li>Design the architecture of decentralized applications leveraging Blockchain Technology</li>
+            <li>Application of IT project management skills and DevOps tools for software projects</li>
+            <li>Ethereum smart contracts programming with proper testing of code to comply security requirements</li>
+          </ul></ul>
+          </div>
+
+          <div><b>Bachelor of Engineering (Hon’s) </b><a href = "https://www.sunderland.ac.uk/" target="_blank">– University of Sunderland</a>, UK — Aug, 2006- Nov, 2009
+          <ul style= {{listStyleType: "square" }} ><li><b>Key Courses/Concepts:</b></li>
+         
+            <ul style= {{listStyleType: "circle" }}><li>Major: Electronics and Electrical Engineeering</li>
+            <li>Specialize in digital and analogue electronics, industrial control systems design and machines.</li>
+            <li>SCADA and PLC Programming</li>
+          </ul></ul>
+          </div>
+          
+          <div><b>Diploma in Electronics</b><a href = "https://www.tp.edu.sg/" target="_blank"> – Temasek Polytechnic</a>, Singapore — June, 2002- July, 2005
+          <ul style= {{listStyleType: "square" }} ><li><b>Key Courses/Concepts:</b></li>
+         
+            <ul style= {{listStyleType: "circle" }}><li>Major: Eletronics Engineering</li>
+            <li>Embedded system design and programming</li>
+            <li>Java programming fundamentals</li>
+          </ul></ul>
+          </div>
+          {close}
         </article>
 
+{/* Academic Projects */}
         <article
+          id="project"
+          className={`${this.props.article === 'project' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Academic Projects</h2>
+          <div>
+          <a href = "https://5e8c3d241303e42341e4b486--friendly-snyder-1f7d4c.netlify.app/" target="_blank"> <b>Chat Application-Full Stack Development</b></a> --------------April, 2020.
+          <ul style= {{listStyleType: "square" }} ><li><b><a href = "https://www.georgebrown.ca/" target="_blank"> George Brown College | </a></b>Toronto, Canada</li>
+         
+            <ul style= {{listStyleType: "circle" }}>
+            <li>Developed fully functional chat application based on reactjs, socket.io, nodeJs and MongoDB</li>
+            <li>Deployed back-end to Heroku and Fron-end to netlify</li>
+            <li>Team work(group of two) and follwed advanced git concepts during software development</li>
+          </ul></ul>
+          </div>
+
+          <div>
+          <b>Universal Automated Relay Tester</b>--------------August, 2009.
+          <ul style= {{listStyleType: "square" }} ><li><b><a href = "https://www.sunderland.ac.uk/" target="_blank"> University of Sunderland | </a></b>United Kingdom.</li>
+         
+            <ul style= {{listStyleType: "circle" }}>
+            <li>Designed and implemented prototype for Universal Automated Relay Tester</li>
+            <li>Individual project and applied arduino programming knowledge into the project</li>
+          </ul></ul>
+          </div>
+
+          <div>
+          <b>Palm Home Automation System</b> --------------April, 2005.
+          <ul style= {{listStyleType: "square" }} ><li><b><a href = "https://www.tp.edu.sg/" target="_blank"> Temasek Polytechnic | </a></b>Singapore</li>
+         
+            <ul style= {{listStyleType: "circle" }}>
+            <li>Applied Mobile Visual Basic programming skills to integrate Palmtop with basic home electrical intreface baord from cytech technology, Singapore</li>
+            <li>Well managed team effort (group of four) produced basic functional project</li>
+          </ul></ul>
+          </div>
+
+          {close}
+        </article>
+
+{/* Certificates */}
+
+        {/* <article
           id="about"
           className={`${this.props.article === 'about' ? 'active' : ''} ${
             this.props.articleTimeout ? 'timeout' : ''
           }`}
           style={{ display: 'none' }}
         >
-          <h2 className="major">Experience</h2>
+          <h2 className="major">Certificates</h2>
           <div><b>Profession:</b> Senior Technical Specialist - Avionics. <p><b>Total Years of Experience:</b>13 Years (Nov/2006 to Nov/2019).</p>
           <p><b> Main duties:</b></p>
           <p>1. Avionics troubleshoot, repair, overhaul, test, modify, install and inspect aircraft electronic systems and components including communications, navigations, and auto flight equipment.
@@ -101,7 +208,36 @@ class Main extends React.Component {
           <p><b>Avionics Technician,</b> <a href = "https://aerospace.honeywell.com/en" target="_blank">Honeywell Aerospace Pte Ltd,</a> Singapore — 2006(Nov) to 2008(Mar)</p>
           </div>
           {close} 
+        </article> */}
+         <article
+          id="about"
+          className={`${this.props.article === 'about' ? 'active' : ''} ${
+            this.props.articleTimeout ? 'timeout' : ''
+          }`}
+          style={{ display: 'none' }}
+        >
+          <h2 className="major">Certificates</h2>
+          <div>
+          <ul style= {{listStyleType: "square" }} ><li><b>AI in Fintech essential Training</b>--------------May, 2020.</li>
+          <a href = "https://www.linkedin.com/in/cherukkattil-naseer-3526201a/" target="_blank">
+          LinkedIn | </a>online.
+          </ul>
+          <ul style= {{listStyleType: "square" }} ><li><b>Node.js essential Training</b>--------------May, 2020.</li>
+          <a href = "https://www.linkedin.com/in/cherukkattil-naseer-3526201a/" target="_blank">
+          LinkedIn | </a>online.
+          </ul>
+          <ul style= {{listStyleType: "square" }} ><li><b>React.js essential Training</b>--------------May, 2020.</li>
+          <a href = "https://www.linkedin.com/in/cherukkattil-naseer-3526201a/" target="_blank">
+          LinkedIn | </a>online.
+          </ul>
+          <ul style= {{listStyleType: "square" }} ><li><b>Etheruem: Building Blockchain Decentralized Apps (DApps)</b>--------May, 2020.</li>
+          <a href = "https://www.linkedin.com/in/cherukkattil-naseer-3526201a/" target="_blank">
+          LinkedIn | </a>online.
+          </ul>
+          </div>
+          {close}
         </article>
+
 
         <article
           id="contact"
@@ -112,20 +248,31 @@ class Main extends React.Component {
         >
           <h2 className="major">Contact Info</h2>
           <span className="image main">
-            <img src={pic01} alt="" />
+            {/* <img src={pic01} alt="" /> */}
           </span>
-          <div><div><b>Address</b><ul><li><b>Canada: </b>386 Wharncliffe Rd, South London ON-N6J2M1</li><li><b>Singapore: </b> BLK897, #03-812, Tampines Street 81, Singapore-520897</li></ul></div>
-          <div><b>Contact no: </b> <p> +65 87483486 (Singapore) <a
+          <div><b>Address:</b> 386 Wharncliffe Rd, South London ON-N6J2M1, Canada
+          {/* <li><b>Singapore: </b> BLK897, #03-812, Tampines Street 81, Singapore-520897</li> */}
+          </div>
+          <div>
+            
+            <b>Contact no: </b> 
+            
+              {/* <p> +65 87483486 (Singapore) <a
                 href="https://is.gd/WJZk5a"
                 className="icon fa-whatsapp"
-                target="_blank"></a> and +1 (416)3000 491(Canada) <a
+                target="_blank"></a> </p> */}
+                
+                <p>+1 (416)3000 491 <a
                 href="https://is.gd/boq3wP"
                 className="icon fa-whatsapp"
                 target="_blank"></a> </p></div>
           <div><b>Email:</b> <a href = "mailto:naseer8518@gmail.com">naseer8518@gmail.com</a></div> 
-          <div><b>Nationality:</b> Singapore </div>
+
+          {/* <div><b>Nationality:</b> Singapore </div>
           <div><b>Residency Status Canada:</b>Open Work Permit and Study Permit</div>
-          <div><b>Date of Birth:</b>05-Mar-1985 </div> <a href="#work"> </a></div>
+          <div><b>Date of Birth:</b>05-Mar-1985 </div> <a href="#work"> </a></div> */}
+
+
           <ul className="icons">
             <li> 
               <a

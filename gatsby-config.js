@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Cherukkattil Naseer - CV',
     author: 'Cherukkattil Naseer',
-    description: 'Profile or Curriculum Vitae',
+    description: 'Profile or Curriculum Vitae or Resume',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

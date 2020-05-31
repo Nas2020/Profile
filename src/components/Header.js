@@ -10,11 +10,13 @@ const Header = props => (
       <div className="inner">
         <h1>CHERUKKATTIL NASEER</h1>
         <p>
-          A student at {' '}
-          <a href="https://www.georgebrown.ca/" target="_blank">George Brown College</a> in Canada.
+          Emerging Full Stack Blockchain Developer, currently student at {' '}
+          <a href="https://www.georgebrown.ca/" target="_blank">George Brown College</a> in Toronto, Canada.
           <br />
-          Course:{' '}
-          <a href="https://www.georgebrown.ca/programs/blockchain-development-program-t175/" target="_blank">Blockchain Development Program</a>.
+          {/* Course:{' '}
+          <a href="https://www.georgebrown.ca/programs/blockchain-development-program-t175/" target="_blank">Blockchain Development Program</a>. */}
+          <br />A hard-working, self motivated team player who is also well versed in Full Stack Web and Blockchain Development
+          with outstanding communication and interpersonal skills.
         </p>
       </div>
     </div>
@@ -41,10 +43,19 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
+              props.onOpenArticle('project')
+            }}
+          >
+            Academic Projects
+          </button>
+        </li>
+        <li>
+          <button
+            onClick={() => {
               props.onOpenArticle('about')
             }}
           >
-            Experience
+            Certificates
           </button>
         </li>
         <li>
